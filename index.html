@@ -4,26 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ORDER APP</title>
 </head>
-<body>
+<body class="page">
     <header class="header">
 
     </header>
 
-
+    
 
 
     <main class="content">
 
+        <section class="order-info">
+
+            
+            <fieldset class="order-info__fieldset">
+                <label for="customer-name" class="form__label">Имя Заказчика</label>
+                <input type="text" class="form-input customer__name" id="customer-name">
+                <label for="project-name" class="form__label">Название проекта</label>
+                <input type="text" class="form-input customer__project-name" id="project-name">
+                
+
+                
+            </fieldset>
+            <div class="option-bttns">
+                <div class="option-bttns__textile">
+                    <h2>Опции Текстиля</h2>
+                    <button class="textile__ready-add">Готовый текстиль</button>
+
+                    <button class="textile__sewing-add">Пошив</button>
+                </div>
+                <div class="option-bttns__print">
+                    <h2>Опции печати</h2>
+                    <label for="ss-input" class="ss">Шелкография</label>
+                    <input type="range" min="0" max="5" class="ss-input" id="ss-input">
+                    
+                    <label for="emb-input" class="ss">Вышивка</label>
+                    <input type="range" min="0" max="5" class="emb-input" id="emb-input">
+
+                    <button class="print-option-bttn">Сформировать</button>
+
+                </div>
+
+                
+                <button class="reset-button">Сбросить</button>
+            </div>
+        </section>
+
+        <div class="textile-option">
+
+        </div>
+        <div class="print-option">
+
+        </div>
+
     </main>
 
 
-    
+
 
     <footer class="footer">
 
     </footer>
+
+    <script>
+        let textileReady = document.querySelector('.textile__ready-add');
+        let textileSewing = document.querySelector('.textile__sewing-add');
+        let textileOption = document.querySelector('.textile-option');
+        let printOption = document.querySelector('.print-option');
+        let printOptionButton = document.querySelector('.print-option-bttn');
+
+        let ssRange = document.querySelector('.ss-input');
+        let embRange = document.querySelector('.emb-input');
+
+        let resetButton = document.querySelector('.reset-button');
+
+        function readyAdd () {
+            textileOption.insertAdjacentHTML('beforeend', '<h1>Hello, World!</h1>');
+            textileReady.setAttribute('disabled', true);
+            textileSewing.setAttribute('disabled', true);
+        };
+
+        function sewingAdd () {
+            textileOption.insertAdjacentHTML('beforeend', '<h1>Hello, World!#2</h1>');
+            textileSewing.setAttribute('disabled', true);
+            textileReady.setAttribute('disabled', true);
+        };
+
+        function printAdd () {
+            for (let i = 1; i <= ssRange.value; i++) {
+                printOption.insertAdjacentHTML('beforeend', '<h1>Print, world</h1>');
+                printOptionButton.setAttribute('disabled', true);
+            }
+
+            for (let i = 1; i <= embRange.value; i++) {
+                printOption.insertAdjacentHTML('beforeend', '<h1>EMB, world</h1>');
+                printOptionButton.setAttribute('disabled', true);
+            }
+            
+
+        }
+
+        function reset () {
+            printOptionButton.removeAttribute('disabled', true);
+            textileSewing.removeAttribute('disabled', true);
+            textileReady.removeAttribute('disabled', true);
+            printOption.innerHTML = '';
+            textileOption.innerHTML = '';
+        }
+
+
+
+
+
+
+        textileReady.addEventListener('click', readyAdd);
+        textileSewing.addEventListener('click', sewingAdd);
+        printOptionButton.addEventListener('click', printAdd);
+        resetButton.addEventListener('click', reset);
+
+    </script>
     
 </body>
 </html>
