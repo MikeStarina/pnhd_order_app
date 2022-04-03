@@ -20,3 +20,7 @@
 @import url(../blocks/form/__fieldset/form__fieldset.css);
 @import url(../blocks/form/__input/form__input.css);
 @import url(../blocks/form/__input-label/form__input-label.css);
+@import url(../blocks/form/__textarea/form__textarea.css);
+@import url(../blocks/form/__submit/form__submit.css);
+
+@import url(../blocks/order-cut/order-cut.css);

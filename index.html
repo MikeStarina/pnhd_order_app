@@ -11,8 +11,8 @@
   <header class="header">
     <h1 class="header__title">ORDER APP.</h1>
     <nav class="menu">
-      <a href="#" class="menu__link">LINK</a>
-      <a href="#" class="menu__link">LINK</a>
+      <a href="#" class="menu__link">PNHD</a>
+      <a href="#" class="menu__link">ABOUT</a>
     </nav>
   </header>
   <main class="content">
@@ -22,6 +22,11 @@
         <p class="section__title">О ЗАКАЗЕ</p>
       </div>
       <form action="#" class="form">
+
+        
+
+
+
         <fieldset class="form__fieldset">
           <label for="order-number" class="form__input-label">№ Заказа:</label>
           <input type="text" class="form__input" name="order-number">
@@ -36,14 +41,50 @@
           <input type="text" class="form__input" name="end-date">
         </fieldset>
 
-        <fieldset class="form__fieldset">
-          
-        </fieldset>
+
+
+
+
+
 
         <fieldset class="form__fieldset">
-          
+          <label for="items-type" class="form__input-label">Вид изделий:</label>
+          <input type="text" class="form__input" name="items-type">
+
+          <label for="item-passport" class="form__input-label">Паспорт:</label>
+          <input type="text" class="form__input" name="item-passport">
+
+          <label for="item-qtye" class="form__input-label">Количество:</label>
+          <input type="text" class="form__input" name="item-qty">
+
+          <label for="print-parts" class="form__input-label">Нанесения:</label>
+          <input type="text" class="form__input" name="print-parts">
         </fieldset>
+
+
+
+
+
+        <fieldset class="form__fieldset">
+          <label for="pack-type" class="form__input-label">Упаковка:</label>
+          <textarea type="text" class="form__input form__textarea" name="pack-type" cols="5"></textarea>
+
+          <label for="order-info-comment" class="form__input-label">Комментарий:</label>
+          <textarea type="text" class="form__input form__textarea" name="order-info-comment" cols="5"></textarea>
+        </fieldset>
+
+
+
+        <button class="form__submit" type="submit">Подтвердить</button>
+
       </form>
+    </section>
+      
+    <section class="order-cut">
+      <div class="section__title-wrapper">
+        <h2 class="section__title">2/3 #</h2>
+        <p class="section__title">ЗАКРОЙ</p>
+      </div>
     </section>
   </main>
   
