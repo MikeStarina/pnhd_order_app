@@ -5,6 +5,7 @@ import Header from '../header/header.jsx';
 import Progressbar from '../progress-bar/progress-bar.jsx';
 import Main from '../../pages/main/main.jsx';
 import Footer from '../footer/footer.jsx';
+import { Textile } from '../../pages/textile/textile.jsx';
 
 
 
@@ -26,7 +27,7 @@ export default function App() {
           </Route>
 
           <Route path='/textile' exact={true}>
-            
+            <Textile />
           </Route>
           
         </Switch>

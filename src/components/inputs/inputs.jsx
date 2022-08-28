@@ -20,8 +20,8 @@ export function TextInput({ type, inputName, id, title, ...rest}) {
    
     return (
         <>
-        <span className={styles.input_title} htmlFor={id}>{title}</span>
-        <input type={type} className={styles.text_input} name={inputName} id={id} onChange={(e) => onChange(e, dispatch)} value={orderData.inputName}></input>
+        <label className={styles.input_title} htmlFor={id}>{title}</label>
+        <input type={type} className={styles.text_input} name={inputName} id={id} onChange={(e) => onChange(e, dispatch)} value={orderData.inputName} required minLength={3}></input>
         <span className={styles.input_error}></span>
         </>
     )
@@ -44,7 +44,7 @@ export function RadioInput({ type, inputName, id, title }) {
         
         <div className={styles.radio_wrapper}>
             <input type={type} className={styles.radio_input} name={inputName} id={id} onChange={(e) => onChange(e, dispatch)} checked={isChecked}></input>
-            <span className={styles.radio_input_title} htmlFor={id}>{title}</span>        
+            <label className={styles.radio_input_title} htmlFor={id}>{title}</label>        
             <span className={styles.input_error}></span>
         </div>
     )
@@ -57,8 +57,8 @@ export function CheckboxInput({ type, inputName, id, title, placeholder }) {
 
     return (
         <div className={styles.radio_wrapper}>
-            <input type={type} className={styles.radio_input} name={inputName} id={id} onChange={(e) => onChange(e, dispatch)} placeholder={placeholder && placeholder}></input>
-            <span className={styles.radio_input_title} htmlFor={id}>{title}</span>        
+            <input type={type} className={styles.checkbox_input} name={inputName} id={id} onChange={(e) => onChange(e, dispatch)} placeholder={placeholder && placeholder}></input>
+            <label className={styles.radio_input_title} htmlFor={id}>{title}</label>        
             <span className={styles.input_error}></span>
         </div>
     )

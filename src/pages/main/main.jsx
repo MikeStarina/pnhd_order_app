@@ -4,6 +4,7 @@ import styles from './main.module.css';
 
 import { TextInput, RadioInput, CheckboxInput } from "../../components/inputs/inputs.jsx";
 import { useSelector } from "react-redux";
+import { Link } from 'react-router-dom';
 
 
 
@@ -47,8 +48,9 @@ export default function Main() {
                         <CheckboxInput type={'checkbox'} title={'ТЕРМОТРАНСФЕР'} inputName={'printType'} id={'isHeatTransfer'} />
                         
                     </fieldset>
-
-                    <button type='submit' className={styles.submit_button}>ДАЛЕЕ</button>
+                    <Link to='/textile' className={styles.link}>
+                        <button type='submit' className={styles.submit_button}>ДАЛЕЕ</button>
+                    </Link>
                 </form>
             </div>
         </section>

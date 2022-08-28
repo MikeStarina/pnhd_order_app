@@ -10,7 +10,7 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <Link to='/' className={styles.link}>
-                <h1 className={styles.header_title}>O—R APP.</h1>
+                <h1 className={styles.header_title}>O—R / APP.</h1>
             </Link>
             <nav className={styles.header_menu}>
                 

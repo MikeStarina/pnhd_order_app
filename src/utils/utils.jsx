@@ -20,7 +20,7 @@ export const onChange = (e, dispatch) => {
             
         })
     } else {
-    
+        //console.log(e.target.validity)
         dispatch({ 
             type: ON_FORM_CHANGE,
             formName: e.target.name,
