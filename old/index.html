@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Order app.</title>
+</head>
+<body class="page">
+  <header class="header">
+    <h1 class="header__title">ORDER APP.</h1>
+    <nav class="menu">
+      <a href="#" class="menu__link">PNHD</a>
+      <a href="#" class="menu__link">ABOUT</a>
+    </nav>
+  </header>
+  <main class="content">
+    <section class="order-info">
+      <div class="section__title-wrapper">
+        <h2 class="section__title">1/3 #</h2>
+        <p class="section__title">О ЗАКАЗЕ</p>
+      </div>
+      <form action="#" class="form">
+
+        
+
+
+
+        <fieldset class="form__fieldset">
+          <label for="order-number" class="form__input-label">№ Заказа:</label>
+          <input type="text" class="form__input" name="order-number">
+
+          <label for="manager" class="form__input-label">Менеджер:</label>
+          <input type="text" class="form__input" name="manager">
+
+          <label for="start-date" class="form__input-label">Дата оформления:</label>
+          <input type="text" class="form__input" name="start-date">
+
+          <label for="end-date" class="form__input-label">Дата сдачи:</label>
+          <input type="text" class="form__input" name="end-date">
+        </fieldset>
+
+
+
+
+
+
+
+        <fieldset class="form__fieldset">
+          <label for="items-type" class="form__input-label">Вид изделий:</label>
+          <input type="text" class="form__input" name="items-type">
+
+          <label for="item-passport" class="form__input-label">Паспорт:</label>
+          <input type="text" class="form__input" name="item-passport">
+
+          <label for="item-qtye" class="form__input-label">Количество:</label>
+          <input type="text" class="form__input" name="item-qty">
+
+          <label for="print-parts" class="form__input-label">Нанесения:</label>
+          <input type="text" class="form__input" name="print-parts">
+        </fieldset>
+
+
+
+
+
+        <fieldset class="form__fieldset">
+          <label for="pack-type" class="form__input-label">Упаковка:</label>
+          <textarea type="text" class="form__input form__textarea" name="pack-type" cols="5"></textarea>
+
+          <label for="order-info-comment" class="form__input-label">Комментарий:</label>
+          <textarea type="text" class="form__input form__textarea" name="order-info-comment" cols="5"></textarea>
+        </fieldset>
+
+
+
+        <button class="form__submit" type="submit">Подтвердить</button>
+
+      </form>
+    </section>
+      
+    <section class="order-cut">
+      <div class="section__title-wrapper">
+        <h2 class="section__title">2/3 #</h2>
+        <p class="section__title">ЗАКРОЙ</p>
+      </div>
+
+      <form action="#" class="form">
+
+
+
+
+        <fieldset class="form__fieldset">
+          <label for="main-fabric" class="form__input-label">Основное полотно:</label>
+          <input type="text" class="form__input" name="main-fabric">
+
+          <label for="second-fabric" class="form__input-label">Отделочное полотно:</label>
+          <input type="text" class="form__input" name="second-fabric">
+        </fieldset>
+
+
+        <fieldset class="form__fieldset">
+          <h4 class="form__fieldset-title">Крой для нанесений:</h4>
+            <div class="form__fieldset-contentbox">
+              <div class="form__fieldset-box">
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" class="form__input form__checkbox" name="front">
+                  <label for="front" class="form__input-label">Полочка</label>
+                </div>
+
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" class="form__input form__checkbox" name="back">
+                  <label for="back" class="form__input-label">Спинка</label>
+                </div>
+
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" class="form__input form__checkbox" name="pocket">
+                  <label for="pocket" class="form__input-label">Карман</label>
+                </div>
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" class="form__input form__checkbox" name="hood">
+                  <label for="hood" class="form__input-label">Капюшон</label>
+                </div>
+              </div>
+              <div class="form__fieldset-box">
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" class="form__input form__checkbox" name="lsleeve">
+                  <label for="lsleeve" class="form__input-label">Левый рукав</label>
+                </div>
+
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" class="form__input form__checkbox" name="rsleeve">
+                  <label for="rsleeve" class="form__input-label">Правый рукав</label>
+                </div>
+
+                
+              </div>
+            </div>
+        </fieldset>
+
+
+
+        <fieldset class="form__fieldset">
+          <h4 class="form__fieldset-title">Закрытие горловины:</h4>
+          
+            <div class="form__fieldset-box">
+              <div class="form__checkbox-wrapper">
+                <input type="checkbox" class="form__input form__checkbox" name="hand-neck">
+                <label for="hand-neck" class="form__input-label">Ручное закрытие</label>
+              </div>
+
+              <div class="form__checkbox-wrapper">
+                <input type="checkbox" class="form__input form__checkbox" name="tape-neck">
+                <label for="tape-neck" class="form__input-label">Закрытие тесьмой</label>
+              </div>
+
+              <div class="form__checkbox-wrapper">
+                <input type="checkbox" class="form__input form__checkbox" name="auto-neck">
+                <label for="auto-neck" class="form__input-label">машинное закрытие</label>
+              </div>
+              <div class="form__checkbox-wrapper">
+                <input type="checkbox" class="form__input form__checkbox" name="tape-cut">
+                <label for="tape-cut" class="form__input-label">Нарезка бейки</label>
+              </div>
+            </div>
+            
+              
+            
+          
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <label for="order-cut-comment" class="form__input-label">Комментарий:</label>
+          <textarea type="text" class="form__input form__textarea" name="order-cut-comment" cols="5"></textarea>
+
+        </fieldset>
+
+
+        <div class="table-box">
+          <iframe class="table" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT9JXqkfX0bChAJ_TStscGTXMtpEXxuEtRyPERGlwvqffvXBLhYY_6ZctryXkaQGTlipcOwkD0Ju--P/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        </div>
+
+
+      </form>
+
+    </section>
+  </main>
+  
+</body>
+</html>

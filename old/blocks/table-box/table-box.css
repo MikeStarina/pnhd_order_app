@@ -1,0 +1,7 @@
+.table-box {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}

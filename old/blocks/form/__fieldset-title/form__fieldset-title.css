@@ -1,0 +1,12 @@
+.form__fieldset-title {
+    
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+
+}

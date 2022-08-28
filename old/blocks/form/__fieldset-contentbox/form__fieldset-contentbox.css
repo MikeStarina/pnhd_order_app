@@ -1,0 +1,5 @@
+.form__fieldset-contentbox {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
